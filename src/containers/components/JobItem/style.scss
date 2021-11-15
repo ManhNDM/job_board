@@ -1,0 +1,61 @@
+@import "../../../index.scss";
+.job-item{
+    padding:spacing(2,0);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    &:hover{
+        background-color: color('orange-light');
+        .job-item__content__title{
+            cursor: pointer;
+            color:color('blue')
+        }
+    }
+    &__image img{
+        margin-left: spacing(1.5);
+        border: 1px solid color('gray');
+        margin-top: spacing(1);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__content{
+        &__title{
+            margin-left: spacing(1.5);
+            font-size:$h3;
+            font-weight: $fwMedium;
+            line-height: 28px;
+          
+        }
+        &__price{
+            margin-left: spacing(1.5);
+            color:color('green');
+            font-size: $title3;
+            span{
+                margin-left: 5px;
+            }
+        }
+        &__description{
+            font-size: $title3;
+            font-weight: $fwMedium;
+
+        }
+        &__preview{
+            &__hot{
+                background-color: color('gray');
+                width: 50px;
+                text-align: center;
+                color:color('white');
+                &-active{
+                    background-color: color('orange');
+                }
+            }
+            &__city{
+                color: color('gray');
+                font-weight: $fwRegular;
+            }
+            &__timer{
+                font-size: $title3;
+                color: color('blue');
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../../index.scss";
+header {
+  background-color: color('primary');
+   
+    .nav-item {
+        margin: spacing(0,1);
+    }
+    .nav-link {
+        font-weight: $fwRegular;
+        font-size: $body;
+    }
+}

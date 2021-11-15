@@ -1,0 +1,14 @@
+@import "../../../index.scss";
+.job__content {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color:color('white');
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    &__title{
+        font-size: $h2;
+        font-weight: $fwMedium;
+        padding: spacing(1.5,0);
+        margin-left: spacing(2);
+    }
+}
